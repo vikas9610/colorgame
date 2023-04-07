@@ -148,8 +148,6 @@ exports.login = async (req, res) => {
         const mobile = req.body.mobile;
         const password = req.body.password;
 
-        console.log(mobile);
-
         const userData = await User.findOne({ mobile: mobile });
 
         if (userData) {

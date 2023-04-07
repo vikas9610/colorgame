@@ -1,7 +1,7 @@
 const AuthController = require("../controllers/auth.controller");
 
 //middleware
-// const auth = require("./../middleware/auth");
+const auth = require("./../middleware/auth");
 
 module.exports = function (app) {
     app.use(function (req, res, next) {
@@ -22,9 +22,7 @@ module.exports = function (app) {
        return next();
     });
 
-    app.post("/api/register", AuthController.register);
-    app.post("/api/login", (req, res) => {
-        res.json({ message: "Login Route OK" });
-      });
-    app.post("/api/update-password", AuthController.updatePasword);
+    app.post("/api/auth/register", AuthController.register);
+    app.post("/api/auth/login", AuthController.login);
+    app.post("/api/update-password",auth,AuthController.updatePasword);
 };
