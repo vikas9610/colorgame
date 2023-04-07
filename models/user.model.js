@@ -24,6 +24,9 @@ module.exports = (sequelize, Sequelize) => {
       referral_code: {
         type: Sequelize.STRING
       }
+    },
+    {
+      underscored: true
     });
     return User;
   };

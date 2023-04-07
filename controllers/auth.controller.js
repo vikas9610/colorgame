@@ -148,7 +148,11 @@ exports.login = async (req, res) => {
         const mobile = req.body.mobile;
         const password = req.body.password;
 
-        const userData = await User.findOne({ mobile: mobile });
+        const userData = await User.findOne({ 
+            where:{
+                mobile: mobile
+            }
+         });
 
         if (userData) {
             const passMatch = await bcrypt.compare(password, userData.password);
