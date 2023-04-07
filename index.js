@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
 require('./routes/app.route')(app);
 
 // set port, listen for requests
-const PORT =9610;
+const PORT =8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
