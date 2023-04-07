@@ -1,8 +1,8 @@
 module.exports = {
-    HOST: "216.10.246.189",
-    USER: "vrsof3ds_work",
-    PASSWORD: "vrsoft@2020",
-    DB:  "vrsof3ds_colorgame",
+    HOST: "localhost",
+    USER: "root",
+    PASSWORD: "",
+    DB:  "colorgame",
     dialect: "mysql",
     // pool: {
     //     max: 5,
