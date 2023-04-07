@@ -1,5 +1,5 @@
 module.exports = {
-    HOST: "localhost",
+    HOST: "192.168.1.6",
     USER: "root",
     PASSWORD: "",
     DB:  "colorgame",
