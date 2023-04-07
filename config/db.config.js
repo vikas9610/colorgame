@@ -4,11 +4,11 @@ module.exports = {
     PASSWORD: "vrsoft@2020",
     DB:  "vrsof3ds_colorgame",
     dialect: "mysql",
-    pool: {
-        max: 5,
-        min: 0,
-        acquire: 30000,
-        idle: 10000
-    },
+    // pool: {
+    //     max: 5,
+    //     min: 0,
+    //     acquire: 30000,
+    //     idle: 10000
+    // },
     timezone: '+05:30', // for writing to database
 };
